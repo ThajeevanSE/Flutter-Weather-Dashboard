@@ -1,4 +1,4 @@
-📱 Personalized Weather Dashboard – Flutter
+# 📱 Personalized Weather Dashboard – Flutter
 IN3510 – Wireless Communication & Mobile Networks
 University of Moratuwa, Faculty of IT
 📌 Overview
@@ -8,7 +8,7 @@ The app acts as a personalized weather dashboard that generates latitude and lon
 
 The app works completely offline after the first successful fetch by using Shared Preferences caching.
 
- Features (Functional Requirements)
+## Features (Functional Requirements)
 1. Student Index Input
 
 Text field for student index (e.g., 194174B)
@@ -56,6 +56,17 @@ Loading indicator
 
 Friendly error messages
 
+<h3>App View</h3>
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/c4e41eb1-24fb-48bc-9ee5-909c643fb532" alt="Screenshot 1" width="300" align="left" ></td>
+    <td><img src="https://github.com/user-attachments/assets/f1d8cba4-01c6-4bb9-ae15-cf6304d4c854" alt="Screenshot 2" width="300" align="right" ></td>
+  </tr>
+</table>
+
+
+
 📡 4. Offline Cache (Shared Preferences)
 
 Stores last successful weather response + timestamp
@@ -70,6 +81,7 @@ Shows a friendly error if no cache exists
 
 
 🗂 Project Structure
+
 lib/
 ├── main.dart
 ├── screens/
@@ -84,25 +96,34 @@ lib/
 
 Flutter (Dart)
 
-HTTP package (API calls)
+HTTP package
 
-Shared Preferences (local caching)
+Shared Preferences
 
-Open-Meteo API (no API key)
+Open-Meteo API
 
-🔧 How to Run
+##🚀 How to Run the Project
+
+### 1️⃣ Clone the Repository
+git clone https://github.com/ThajeevanSE/Flutter-Weather-Dashboard.git
+cd Flutter-Weather-Dashboard
+
+### 2️⃣ Install Dependencies
 flutter pub get
+
+### 3️⃣ Run the Application
 flutter run
 
 
-Platform: Android
-No backend required.
+📌 Platform: Android
+🖥 Backend: Not required
 
-📌 Example Generated Coordinates
+🧮 Example: Generated Coordinates
 
 For index: 194174B
 
-firstTwo = 19 → lat = 5 + 1.9  = 6.9
+firstTwo = 19  → lat = 5 + 1.9 = 6.9  
+nextTwo  = 41  → lon = 79 + 4.1 = 83.1
 nextTwo  = 41 → lon = 79 + 4.1 = 83.1
 
 🤝 Author
